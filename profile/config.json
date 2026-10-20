@@ -1,0 +1,58 @@
+{
+  "username": "AbdullatifCengiz",
+  "name": ["Abdüllatif", "Cengiz"],
+  "location_line": "~/elazığ  ·  38.67°N 39.22°E",
+  "intro": [
+    "Software engineering student at Fırat University.",
+    "I build what sits between a camera, a server and a screen."
+  ],
+  "chips": ["LARAVEL", "TYPESCRIPT", "C#", "ESP32"],
+  "now": ["plaka-takip", "vito", "gyro-sword"],
+  "projects": [
+    {
+      "title": "Plaka Takip",
+      "kind": "HARDWARE + WEB",
+      "status": "in development",
+      "tone": "amber",
+      "desc": "License-plate recognition on ESP32 cameras. A Laravel + React panel logs every plate and fires an alert the moment an unknown one shows up.",
+      "stack": ["Laravel", "Inertia", "React", "TypeScript", "PostgreSQL", "ESP32"],
+      "url": null
+    },
+    {
+      "title": "Vito, reworked",
+      "kind": "DEVOPS",
+      "status": "active",
+      "tone": "teal",
+      "desc": "My fork of VitoDeploy, the self-hosted server manager. A reworked UI and one-click site setup, so a project goes from repo to live without the busywork.",
+      "stack": ["PHP", "Laravel", "Docker", "GHCR"],
+      "url": "https://github.com/FatLat/vito"
+    },
+    {
+      "title": "Gyro Sword",
+      "kind": "GAME · 3A INTERACTIVE",
+      "status": "early stage",
+      "tone": "muted",
+      "desc": "A sword duel you fight by swinging your phone. The opponent studies your habits and changes its tactics to beat them.",
+      "stack": ["Mobile", "Gyroscope", "Game AI"],
+      "url": null
+    },
+    {
+      "title": "Sites for local business",
+      "kind": "WEB · CLIENT WORK",
+      "status": "live",
+      "tone": "teal",
+      "desc": "Fast, clean websites for local businesses, now growing into a template system that turns each trade into a one-day build.",
+      "stack": ["JavaScript", "TypeScript", "Vercel"],
+      "url": "https://osman-divittar-web.vercel.app"
+    }
+  ],
+  "toolbox": [
+    {"label": "backend", "items": ["*Laravel", "PHP", "Inertia.js", "PostgreSQL", "REST APIs"]},
+    {"label": "frontend", "items": ["*TypeScript", "React", "JavaScript", "Radix UI", "HTML & CSS"]},
+    {"label": "desktop", "items": ["*C#", ".NET"]},
+    {"label": "hardware", "items": ["ESP32", "STM32", "Arduino"]},
+    {"label": "infra", "items": ["Docker", "VitoDeploy", "Vercel", "Azure", "Tailscale", "Git"]},
+    {"label": "also", "items": ["Python", "Java"]},
+    {"label": "design", "items": ["Photoshop", "Lightroom", "Canva", "Short-form video"]}
+  ]
+}
