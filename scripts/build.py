@@ -635,7 +635,9 @@ def describe(e):
     if t == "PullRequestEvent":
         pr = p.get("pull_request", {})
         verb = "merged" if p.get("action") == "closed" and pr.get("merged") else p.get("action", "updated")
-        return f"{verb} [PR #{p.get('number')}]({pr.get('html_url', link)}) in {link}"
+        number = p.get("number") or pr.get("number")
+        url = pr.get("html_url") or f"https://github.com/{repo}/pull/{number}"
+        return f"{verb} [PR #{number}]({url}) in {link}"
     if t == "ReleaseEvent":
         return f"released `{p.get('release', {}).get('tag_name', '')}` of {link}"
     if t == "ForkEvent":
@@ -651,7 +653,15 @@ def update_readme(data):
     path = next((f for f in ROOT.iterdir() if f.name.lower() == "readme.md"), ROOT / "README.md")
     text = path.read_text(encoding="utf-8")
     lines, seen = [], set()
+    seen_prs = set()
     for e in data["events"]:
+        if e["repo"]["name"].lower() == f"{USER}/{USER}".lower():
+            continue
+        if e["type"] == "PullRequestEvent":
+            pr_key = (e["repo"]["name"], e.get("payload", {}).get("number"))
+            if pr_key in seen_prs:
+                continue
+            seen_prs.add(pr_key)
         line = describe(e)
         if not line or line in seen:
             continue
