@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Abdullatif%20Cengiz&fontSize=44&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineering%20Student&descSize=18&descAlignY=58" alt="Abdullatif Cengiz" />
 
 <a href="https://github.com/AbdullatifCengiz">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=520&lines=Software+Engineering+Student+at+F%C4%B1rat+University;Learning+Java+%26+building+real+projects;Web+%C2%B7+Embedded+%C2%B7+Design" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=560&lines=Software+Engineering+Student+at+F%C4%B1rat+University;Laravel+%C2%B7+C%23+%C2%B7+JavaScript+%C2%B7+TypeScript;Building+real+projects%2C+one+commit+at+a+time" alt="Typing animation" />
 </a>
 
 <br/><br/>
@@ -19,10 +19,24 @@
 ## 👋 About Me
 
 - 🎓 Software Engineering student at **Fırat University**
-- ☕ Currently strengthening my **Java** skills
-- 🛠️ Building projects across **web development**, **embedded systems** and **visual design**
+- 🌐 Building web applications with **Laravel (PHP)**, **JavaScript** and **TypeScript**
+- 🖥️ Developing desktop applications with **C#**
+- 🧮 Started out with **Java** and algorithm exercises
 - 🤝 Open to collaborating on software projects
 - 📫 Reach me at **cengizabdullatif@gmail.com**
+
+---
+
+## 🚀 Featured Projects
+
+| Project | Stack | What it is |
+|:--|:--|:--|
+| [**workout-api**](https://github.com/AbdullatifCengiz/workout-api) | Laravel | Workout tracking API |
+| [**library-app**](https://github.com/AbdullatifCengiz/library-app) | Laravel | Library management web app |
+| [**PersonelServisOtomasyonu**](https://github.com/AbdullatifCengiz/PersonelServisOtomasyonu) | C# | Staff shuttle service automation |
+| [**Randevu_Sistemi**](https://github.com/AbdullatifCengiz/Randevu_Sistemi) | C# | Appointment scheduling system |
+| [**osman-divittar-web**](https://github.com/AbdullatifCengiz/osman-divittar-web) | JavaScript | Website · [Live](https://osman-divittar-web.vercel.app) |
+| [**serdar-barut-web**](https://github.com/AbdullatifCengiz/serdar-barut-web) | TypeScript | Website project |
 
 ---
 
@@ -30,11 +44,11 @@
 
 | | |
 |:--|:--|
-| **Languages** | <img src="https://skillicons.dev/icons?i=java,cs,py,js,php&theme=dark" alt="Languages" /> |
-| **Web** | <img src="https://skillicons.dev/icons?i=html,css,js,php&theme=dark" alt="Web" /> |
+| **Backend** | <img src="https://skillicons.dev/icons?i=php,laravel,cs&theme=dark" alt="Backend" /> |
+| **Frontend** | <img src="https://skillicons.dev/icons?i=html,css,js,ts&theme=dark" alt="Frontend" /> |
+| **Fundamentals** | <img src="https://skillicons.dev/icons?i=java,py&theme=dark" alt="Fundamentals" /> |
 | **Embedded** | <img src="https://skillicons.dev/icons?i=arduino&theme=dark" alt="Embedded" /> |
-| **Database** | <img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="Database" /> |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,github,vscode,linux&theme=dark" alt="Tools" /> |
+| **Tools & Deploy** | <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel&theme=dark" alt="Tools" /> |
 | **Design** | <img src="https://skillicons.dev/icons?i=ps,lr&theme=dark" alt="Design" /> <img src="https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white" alt="Canva" /> |
 
 ---
