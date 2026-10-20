@@ -269,6 +269,8 @@ def build_skyline(data):
     weeks = data["weeks"][-53:]
     totals = [sum(d["count"] for d in wk) for wk in weeks]
     peak = max(totals) or 1
+    active = sorted(t for t in totals if t)
+    ref = max(1, active[int(len(active) * .85)] if active else 1)
     b = []
     b.append(
         '<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">'
@@ -307,9 +309,11 @@ def build_skyline(data):
         if total == 0:
             city.append(f'<rect x="{x:.1f}" y="{ground - 4}" width="{bw:.1f}" height="4" fill="#141B25"/>')
             continue
-        bh = 10 + (total / peak) ** .7 * 108
+        bh = 10 + min(1, total / ref) ** .6 * 92
+        if total > ref:
+            bh += min(16, 4 + 12 * (total - ref) / max(1, peak - ref))
         top = ground - bh
-        shade = "#1A2230" if total / peak < .5 else "#1E2736"
+        shade = "#1A2230" if total / ref < .5 else "#1E2736"
         city.append(f'<rect x="{x:.1f}" y="{top:.1f}" width="{bw:.1f}" height="{bh:.1f}" fill="{shade}"/>')
         city.append(f'<rect x="{x:.1f}" y="{top:.1f}" width="{bw:.1f}" height="1.5" fill="#2C3748"/>')
         roof = rnd.random()
@@ -321,7 +325,7 @@ def build_skyline(data):
             elif roof < .52:
                 city.append(f'<rect x="{x + bw * .18:.1f}" y="{top - 8:.1f}" width="{bw * .64:.1f}" height="8" fill="{shade}"/>')
         reflections.append(f'<rect x="{x:.1f}" y="{ground}" width="{bw:.1f}" height="{min(bh * .55, river_h):.1f}" fill="{shade}"/>')
-        lit = min(.9, .18 + total / peak * .8)
+        lit = min(.9, .2 + min(1, total / ref) * .7)
         cols = 2 if bw < 12 else 3
         gap = (bw - cols * 2.2) / (cols + 1)
         wy = top + 6
