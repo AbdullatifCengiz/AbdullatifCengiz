@@ -34,7 +34,6 @@ Every building below is one week of my GitHub activity, rebuilt every night. Har
 
 <!-- activity:start -->
 - `Nov 02` &nbsp;starred [microsoft/playwright](https://github.com/microsoft/playwright)
-- `Oct 19` &nbsp;starred [stablyai/orca](https://github.com/stablyai/orca)
 <!-- activity:end -->
 
 &nbsp;
